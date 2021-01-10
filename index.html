@@ -73,7 +73,8 @@
             <img src="./photos/os.png" alt="O.S">
 
             <h1>Kernel</h1>
-            <p>A Kernel is a computer program that is the heart and core of an Operating System. Since the Operating
+            <p>
+                A Kernel is a computer program that is the heart and core of an Operating System. Since the Operating
                 System has control over the system so, the Kernel also has control over everything in the system. It is
                 the most important part of an Operating System. Whenever a system starts, the Kernel is the first
                 program that is loaded after the bootloader because the Kernel has to handle the rest of the thing of
@@ -88,200 +89,270 @@
                 not accessible by other application programs. So, the code of the Kernel is loaded into this protected
                 Kernel Space. Apart from this, the memory used by other applications is called the User Space. As these
                 are two different spaces in the memory, so communication between them is a bit slower.<br><br>
+            </P>
 
-                <H2>Functions of a Kernel</H2>
-                <p>Following are the functions of a Kernel:<br><br>
+            <H2>Functions of a Kernel</H2>
 
-                    Access Computer resource: A Kernel can access various computer resources like the CPU, I/O devices
-                    and other resources. It acts as a bridge between the user and the resources of the system.<br><br>
+            <p>
+                Following are the functions of a Kernel:<br><br>
 
-                    Resource Management: It is the duty of a Kernel to share the resources between various process in
-                    such a way that there is uniform access to the resources by every process.<br><br>
+                Access Computer resource: A Kernel can access various computer resources like the CPU, I/O devices
+                and other resources. It acts as a bridge between the user and the resources of the system.<br><br>
 
-                    Memory Management: Every process needs some memory space. So, memory must be allocated and
-                    deallocated for its execution. All these memory management is done by a Kernel.<br><br>
+                Resource Management: It is the duty of a Kernel to share the resources between various process in
+                such a way that there is uniform access to the resources by every process.<br><br>
 
-                    Device Management: The peripheral devices connected in the system are used by the processes. So, the
-                    allocation of these devices is managed by the Kernel.<br><br>
-                </P>
+                Memory Management: Every process needs some memory space. So, memory must be allocated and
+                deallocated for its execution. All these memory management is done by a Kernel.<br><br>
 
-                <img src="./photos/Kernel_.png" alt="Karnel">
+                Device Management: The peripheral devices connected in the system are used by the processes. So, the
+                allocation of these devices is managed by the Kernel.<br><br>
+            </P>
 
-                <h1>Traditional Web Hosting vs. Cloud Computing</h1>
-                <p>
-                    Traditional Hosting vs. Cloud Hosting: Benefits and Drawbacks of Each
-                    ‘Cloud hosting vs traditional hosting’ is a complicated question that depends on a variety of
-                    factors
-                    unique to each client. Thus, deciding whether to choose cloud hosting or traditional hosting is a
-                    case-by-case basis.<br><br>
+            <img src="./photos/Kernel_.png" alt="Karnel">
 
-                    Although cloud hosting is a growing force in Internet storage and website creation, traditional
-                    hosting
-                    users should not be worried. Traditional hosting still provides a wide array of benefits that will
-                    make
-                    it relevant for many years to come.<br><br>
+            <h1>Processes, Threads and Concurrency</h1><br>
+            <H2>What is a Process?</H2>
+            <p>
+                A process is the execution of a program that allows you to perform the appropriate actions specified
+                in a program. It can be defined as an execution unit where a program runs. The OS helps you to
+                create, schedule, and terminates the processes which is used by CPU. The other processes created by
+                the main process are called child process.<br><br>
 
-                    1. Traditional Hosting: Traditional hosting uses hosted servers to provide storage services to the
-                    client. Storage servers are installed at various locations, and through the use of the Internet,
-                    services are then made available to clients. There are three subcategories of traditional web
-                    hosting,
-                    each with its own benefits and drawbacks:<br><br>
+                A process operations can be easily controlled with the help of PCB(Process Control Block). You can
+                consider it as the brain of the process, which contains all the crucial information related to
+                processing like process id, priority, state, and contents CPU register, etc.<br><br>
+            </P>
 
-                    Shared Hosting: Shared hosting is the most common among small businesses and is sharing the storage
-                    server with multiple other websites. This kind of hosting is cheaper than other types of hosting, as
-                    the
-                    entire cost of a single server is divided among many clients. However, if your business is
-                    expanding,
-                    then you should think twice before choosing this seemingly inexpensive option because what’s saved
-                    in
-                    price will be lost in slower loading times and high web traffic, as there is a large number of users
-                    using the same resources.<br><br>
+            <H2>What is Thread?</H2>
 
-                    Dedicated Servers: This category of web hosting is best for websites that receive 100K visitors on a
-                    daily or monthly basis. With this huge amount of traffic, these websites need higher load times to
-                    prevent a crash. Dedicated servers are also great for customization; you can choose every basic and
-                    professional area of your server, from the amount of space to the operating system, and also the
-                    hardware elements. Opting for dedicated servers allows you the desired flexibility that you need.
-                    Virtual private servers (VPS): Virtual private servers or VPS can be the most balanced web hosting
-                    service to upgrade to. One cool feature of VPS is that it maintains equality amongst all users
-                    unlike
-                    shared hosting. In other words, the VPS server will divide the resources available equally among all
-                    the
-                    participants. If the RAM is 20GB and storage space is 200GB, assuming that it’s limited to 10 users,
-                    the
-                    division will provide 2GB RAM and 20GB storage for each user.<br><br>
+            <p>
+                Thread is an execution unit that is part of a process. A process can have multiple threads, all
+                executing at the same time. It is a unit of execution in concurrent programming. A thread is
+                lightweight and can be managed independently by a scheduler. It helps you to improve the application
+                performance using parallelism.<br><br>
+            </p>
 
-                    2. Cloud Hosting: Cloud computing is an entirely different ballgame than traditional hosting, but it
-                    does share some characteristics with VPS Hosting. In cloud hosting, you’re allowed to use the
-                    computer
-                    resources rather than owning a personal server.<br><br>
+            <H2>What is concurrency?</H2>
 
-                    Let’s say the VPS is restricted to 10 users each with 20 GB of space but none are able to utilize
-                    that
-                    completely, then the host can allow their unused space to be utilized by other websites. So, rather
-                    than
-                    using storage on one server, cloud computing will store your data in 10 different servers.
-                    Therefore, if
-                    one network is busy, you can still operate using any of the 9 other networks. This feature of having
-                    different storage servers allows for a faster working of website, minimal downtime, and better
-                    control
-                    over your data.
-                </P>
+            <p>
+                Concurrency is the execution of the multiple instruction sequences at the same time. It happens in the
+                operating system when there are several process threads running in parallel. The running process threads
+                always communicate with each other through shared memory or message passing. Concurrency results in
+                sharing of resources result in problems like deadlocks and resources starvation.
+                It helps in techniques like coordinating execution of processes, memory allocation and execution
+                scheduling for maximizing throughput.<br><br>
+            </p>
 
-                <h1>Static vs. Dynamic pages</h1>
-                <p>
-                    Dynamic vs. Static Websites: What's the Difference?<br><br>
+            <h1>Storage and File Systems</h1><br>
+            <H2>What is Storage?</H2>
+            <p>
+                Storage is a process through which digital data is saved within a data storage device by means of
+                computing technology. Storage is a mechanism that enables a computer to retain data, either temporarily
+                or permanently.<br><br>
 
-                    There are essentially two types of websites: static and dynamic. However this can be confusing
-                    because<br>
-                    there can be static elements of a dynamic site, dynamic elements of a static site… as we continue
-                    into
-                    the age of Progressive Web Apps and website personalization, the lines become blurred between what’s
-                    static and dynamic.<br><br>
+                Storage devices such as flash drives and hard disks are a fundamental component of most digital devices
+                since they allow users to preserve all kinds of information such as videos, documents, pictures and raw
+                data.<br><br>
 
-                    What can be Static or Dynamic?<br>
-                    When discussing whether a site is static or dynamic, half of the battle is determining what aspect
-                    of
-                    the site you’re discussing. The code of the page, delivery of the page, and the client browser can
-                    all
-                    be considered either static or dynamic.<br><br>
+                Storage is among the key components of a computer system and can be classified into several forms,
+                although there are two major types:<br><br>
 
-                    What’s a Dynamic Website?<br>
-                    Dynamic sites use server side languages to process requests at the time it’s made and generate a
-                    page
-                    and its contents in real-time. This means that dynamic websites interact with the user accessing the
-                    site and render content depending on the user’s actions or settings. One example of a dynamic
-                    website is
-                    web apps. Take Twitter as an example: when you log in, it displays content just for you.<br><br>
+                <b> Storage (Memory):</b> Requires a continuous supply of electricity to store/retain data. It acts as a
+                computer's primary storage for temporarily storing data and handling application workloads. Examples of
+                non-volatile storage include cache memory and random access memory (RAM).<br><br>
 
-                    While dynamic sites are extremely powerful they are also more complex. Along with this complexity
-                    are
-                    many advantages and disadvantages inherent to a dynamic site build.<br><br>
+                <b> Non-Volatile Storage:</b> A type of storage mechanism that retains digital data even if it’s powered
+                off or isn’t supplied with electrical power. This is often referred to as a secondary storage mechanism,
+                and is used for permanent data storage requiring I/O operations. Examples of volatile storage include a
+                hard disk, USB storage and optical media.<br><br>
 
-                    Dynamic Site Advantages<br>
-                    Powered by Databases. By connecting a dynamic site to a database, you’re able to easily request
-                    information in an organized and structured way to create and display content depending on how the
-                    user
-                    wants to view it.<br>
+                Storage is often confused for memory, although in computing the two terms have different meanings.
+                Memory refers to short-term location of temporary data (see volatile storage above), while storage
+                devices, in fact, store data on a long-term basis for later uses and access. While memory is cleared
+                every time a computer is turned off, stored data is saved and stays intact until it’s manually deleted.
+                Primary or volatile storage tends to me much faster than secondary storage due to its proximity to the
+                processor, but it’s also comparably smaller. Secondary storage can hold and handle significantly larger
+                sizes of data, and keeps it inactive until it’s needed again.<br><br>
 
-                    Connect to a CMS<br>
-                    This ability to connect to a database means that you can also connect to a CMS. Content stored in
-                    the
-                    CMS can be a variety of things, from the text to the images that are displayed, page layouts, site
-                    settings, and more. This allows for extreme flexibility when building sites, and also allows for
-                    multiple users to be able to manipulate content as needed.<br><br>
+            </p>
+            <h1>What is File System</h1>
+            <p>
+                In a computer, a file system -- sometimes written filesystem -- is the way in which files are named and
+                where they are placed logically for storage and retrieval. Without a file system, stored information
+                wouldn't be isolated into individual files and would be difficult to identify and retrieve. As data
+                capacities increase, the organization and accessibility of individual files are becoming even more
+                important in data storage.<br><br>
 
-                    Low Ongoing Maintenance Cost<br>
-                    Since you can connect a dynamic site to a CMS there are little or no ongoing costs unless there is a
-                    change in the basic design or an extra capability is added to the site.<br><br>
+                Digital file systems and files are named for and modeled after paper-based filing systems using the same
+                logic-based method of storing and retrieving documents.
+                File systems can differ between operating systems (OS), such as Microsoft Windows, macOS and Linux-based
+                systems. Some file systems are designed for specific applications. Major types of file systems include
+                distributed file systems, disk-based file systems and special purpose file systems.<br><br>
 
-                    Dynamic Site Disadvantages<br>
-                    Design Limitations<br>
-                    When generating content on a page from a database, you’re typically pulling in content and telling
-                    it to
-                    display a certain way, no matter what the content is. This can make design tricky, as you’ll likely
-                    opt
-                    for a one-size-fits-all approach. Depending on the CMS, it can be difficult to build multiple
-                    designs to
-                    display different types of content in different types of ways.<br><br>
+            </p>
+            <H2>How file systems work</H2>
+            <p>
+                A file system stores and organizes data and can be thought of as a type of index for all the data
+                contained in a storage device. These devices can include hard drives, optical drives and flash drives.
+                File systems specify conventions for naming files, including the maximum number of characters in a name,
+                which characters can be used and, in some systems, how long the file name suffix can be. In many file
+                systems, file names are not case sensitive.<br><br>
 
-                    With dynamic sites, you are forced into using templates for your page, or you are committing to
-                    building
-                    custom templates for every page. This is easier in some CMSes such as Zesty.io but harder to do in
-                    others such as Wordpress or Drupal.<br><br>
+                Along with the file itself, file systems contain information such as the size of the file, as well as
+                its attributes, location and hierarchy in the directory in the metadata. Metadata can also identify free
+                blocks of available storage on the drive and how much space is available.
+                A file system also includes a format to specify the path to a file through the structure of directories.
+                A file is placed in a directory -- or a folder in Windows OS -- or subdirectory at the desired place in
+                the tree structure. PC and mobile OSes have file systems in which files are placed somewhere in a
+                hierarchical tree structure.<br><br>
 
-                    Can Incur Upfront Build Costs<br>
-                    When building a dynamic site, it can incur much more work upfront as you’re connecting the site to a
-                    database, building the foundation for the site to generate content, etc. Additional functionality
-                    may
-                    also cost more as you add features to your dynamic site throughout its life. While maintenance costs
-                    are
-                    low for a dynamic site, they can incur much higher initial build costs than a static site.<br><br>
+                Before files and directories are created on the storage medium, partitions should be put into place. A
+                partition is a region of the hard disk or other storage that the OS manages separately. One file system
+                is contained in the primary partition, and some OSes allow for multiple partitions on one disk. In this
+                situation, if one file system gets corrupted, the data in a different partition will be safe.
 
-                    What’s a Static Website?<br>
-                    Static websites are pre-rendered, typically cached, and served by a CDN. The site is pre-generated
-                    by
-                    individual files that are delivered to all users in the same manner. There are advantages and
-                    disadvantages to choosing to build a static site.<br><br>
+            </p>
 
-                    Static Site Advantages<br>
-                    Flexibility<br>
-                    The main advantage of a static site is the flexibility it offers. Every page can be different;
-                    designs
-                    can change, layouts can differ, and the designer doesn’t have to make one design fit the mold for
-                    multiple types of content to display on a page.<br><br>
+            <img src="./photos/file-system-.jpg" alt="Storage">
 
-                    Cost<br>
-                    Cost can be lower upfront to build a static site than to build a dynamic site. Since pages don’t
-                    have to
-                    be connected to a database to generate content and render the view, they can be less expensive than
-                    a
-                    dynamic site to build. However, hooking up a headless CMS to a static site generator and then a
-                    delivery
-                    network can make a static site expensive to build.<br><br>
+            <h1>Memory</h1>
+            <p>
+                Computer memory is any physical device capable of storing information temporarily, like RAM (random
+                access memory), or permanently, like ROM (read-only memory). Memory devices utilize integrated circuits
+                and are used by operating systems, software, and hardware.<br><br>
 
-                    Load Times<br>
-                    Since static sites are pre-rendered, the load times are very fast. Without complex scripting, a
-                    database, parsing content through templating languages, etc. these sites typically load in a
-                    snap.<br><br>
+                <b>Volatile vs. non-volatile memory</b><br>
+                Memory can be either volatile and non-volatile memory. Volatile memory is memory that loses its contents
+                when the computer or hardware device loses power. Computer RAM is an example of volatile memory. It is
+                why if your computer freezes or reboots when working on a program, you lose anything that hasn't been
+                saved. Non-volatile memory, sometimes abbreviated as NVRAM, is memory that keeps its contents even if
+                the power is lost. EPROM is an example of non-volatile memory.<br><br>
 
-                    Static Site Disadvantages<br>
-                    More Difficult to Update<br>
-                    Static sites can be challenging to change once they’re built- even making small content tweaks can
-                    be
-                    challenging. Unless you are familiar with HTML, CSS, and the code of the site, you may have to ask
-                    your
-                    developer who originally built the site to make changes to the site for you.<br><br>
+                <b>Memory is not disk storage</b><br>
+                It is very common for new computer users to be confused by what parts in the computer are memory.
+                Although both the hard drive and RAM are memory, it's more appropriate to refer to RAM as "memory" or
+                "primary memory" and a hard drive as "storage" or "secondary storage."
+                When someone asks how much memory is in your computer, it is often between 1 GB and 16 GB of RAM and
+                several hundred gigabytes, or even a terabyte, of hard disk drive storage. In other words, you always
+                have more hard drive space than RAM.<br><br>
 
-                    More Difficult to Scale<br>
-                    Adding to a static site over time can also be more difficult than with a dynamic site. For instance,
-                    creating product pages means that you have to construct a new page every time you want to add a new
-                    product page, which can take time and incur ongoing maintenance costs.<br><br>
-                </P>
-                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/guvsH5OFizE"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            </p>
+            <img src="./photos/Types of Computer Memory .png" alt="memory">
+
+            <h1>I/O Management</h1>
+
+            <p>
+                One of the important jobs of an Operating System is to manage various I/O devices including mouse,
+                keyboards, touch pad, disk drives, display adapters, USB devices, Bit-mapped screen, LED,
+                Analog-to-digital converter, On/off switch, network connections, audio I/O, printers etc.<br><br>
+
+                An I/O system is required to take an application I/O request and send it to the physical device, then
+                take whatever response comes back from the device and send it to the application. I/O devices can be
+                divided into two categories −<br><br>
+
+                <b>Block devices − </b> A block device is one with which the driver communicates by sending entire
+                blocks of data. For example, Hard disks, USB cameras, Disk-On-Key etc.<br><br>
+
+                <b>Character devices − </b> A character device is one with which the driver communicates by sending and
+                receiving single characters (bytes, octets). For example, serial ports, parallel ports, sounds cards
+                etc<br><br>
+
+                <b>Device Controllers</b>
+                Device drivers are software modules that can be plugged into an OS to handle a particular device.
+                Operating System takes help from device drivers to handle all I/O devices.<br><br>
+
+                The Device Controller works like an interface between a device and a device driver. I/O units (Keyboard,
+                mouse, printer, etc.) typically consist of a mechanical component and an electronic component where
+                electronic component is called the device controller.<br><br>
+
+                There is always a device controller and a device driver for each device to communicate with the
+                Operating Systems. A device controller may be able to handle multiple devices. As an interface its main
+                task is to convert serial bit stream to block of bytes, perform error correction as necessary.<br><br>
+
+                Any device connected to the computer is connected by a plug and socket, and the socket is connected to a
+                device controller. Following is a model for connecting the CPU, memory, controllers, and I/O devices
+                where CPU and device controllers all use a common bus for communication.<br><br>
+
+            </p>
+
+            <img src="./photos/diveces.jpg" alt="I/O">
+
+            <h1>Virtualization & Cloud Computing</h1><br><br>
+            <h2>What is virtualization?</h2>
+
+            <p>
+                Virtualization is the process of running a virtual instance of a computer system in a layer abstracted
+                from the actual hardware. Most commonly, it refers to running multiple operating systems on a computer
+                system simultaneously. To the applications running on top of the virtualized machine, it can appear as
+                if they are on their own dedicated machine, where the operating system, libraries, and other programs
+                are unique to the guest virtualized system and unconnected to the host operating system which sits below
+                it.<br><br>
+
+                There are many reasons why people utilize virtualization in computing. To desktop users, the most common
+                use is to be able to run applications meant for a different operating system without having to switch
+                computers or reboot into a different system. For administrators of servers, virtualization also offers
+                the ability to run different operating systems, but perhaps, more importantly, it offers a way to
+                segment a large system into many smaller parts, allowing the server to be used more efficiently by a
+                number of different users or applications with different needs. It also allows for isolation, keeping
+                programs running inside of a virtual machine safe from the processes taking place in another virtual
+                machine on the same host.<br><br>
+            </p>
+
+            <h2>What is cloud computing?</h2>
+
+            <p>
+                Simply put, cloud computing is the delivery of computing services—including servers, storage, databases,
+                networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster
+                innovation, flexible resources, and economies of scale. You typically pay only for cloud services you
+                use, helping you lower your operating costs, run your infrastructure more efficiently, and scale as your
+                business needs change.<br><br>
+
+                <b>Top benefits of cloud computing</b><br>
+                Cloud computing is a big shift from the traditional way businesses think about IT resources. Here are
+                seven common reasons organizations are turning to cloud computing services:<br><br>
+
+                <b>Cost</b><br>
+                Cloud computing eliminates the capital expense of buying hardware and software and setting up and
+                running on-site datacenters—the racks of servers, the round-the-clock electricity for power and cooling,
+                and the IT experts for managing the infrastructure. It adds up fast.<br><br>
+
+                <b>Global scale</b><br>
+                The benefits of cloud computing services include the ability to scale elastically. In cloud speak, that
+                means delivering the right amount of IT resources—for example, more or less computing power, storage,
+                bandwidth—right when they’re needed, and from the right geographic location.<br><br>
+
+                <b>Performance</b><br>
+                The biggest cloud computing services run on a worldwide network of secure datacenters, which are
+                regularly upgraded to the latest generation of fast and efficient computing hardware. This offers
+                several benefits over a single corporate datacenter, including reduced network latency for applications
+                and greater economies of scale.<br><br>
+
+                <b>Security</b><br>
+                Many cloud providers offer a broad set of policies, technologies, and controls that strengthen your
+                security posture overall, helping protect your data, apps, and infrastructure from potential
+                threats.<br><br>
+
+                <b>Speed</b><br>
+                Most cloud computing services are provided self service and on demand, so even vast amounts of computing
+                resources can be provisioned in minutes, typically with just a few mouse clicks, giving businesses a lot
+                of flexibility and taking the pressure off capacity planning.<br><br>
+
+                <b>Productivity</b><br>
+                On-site datacenters typically require a lot of “racking and stacking”—hardware setup, software patching,
+                and other time-consuming IT management chores. Cloud computing removes the need for many of these tasks,
+                so IT teams can spend time on achieving more important business goals.<br><br>
+
+                <b>Reliability</b><br>
+                Cloud computing makes data backup, disaster recovery, and business continuity easier and less expensive
+                because data can be mirrored at multiple redundant sites on the cloud provider’s network.<br><br>
+            </p>
+
+            <h2> Types of cloud services: IaaS, PaaS, serverless, and SaaS. </h2>
+
+            <img src="./photos/cloud-and-virtulization.jpg" alt="Cloud">
+
+
         </article>
     </div>
 </body>
