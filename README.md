@@ -1,3 +1,5 @@
 # ArticuleOperating-System-
-live: operatesystems.surge.sh
+operatesystems.surge.sh
+
+
 
